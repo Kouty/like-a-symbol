@@ -11,8 +11,8 @@ describe('LikeASymbol', () => {
       expect(LikeASymbol().toString()).to.equal('LikeASymbol()');
     });
 
-    it('should return "LikeASymbol(debugName)" when using LikeASymbol("debugName")', () => {
-      expect(LikeASymbol('debugName').toString()).to.equal('LikeASymbol(debugName)');
+    it('should return "LikeASymbol(description)" when using LikeASymbol("description")', () => {
+      expect(LikeASymbol('description').toString()).to.equal('LikeASymbol(description)');
     });
   });
 
