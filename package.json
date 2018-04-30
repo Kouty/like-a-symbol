@@ -1,0 +1,33 @@
+{
+  "name": "like-a-symbol",
+  "version": "1.0.0",
+  "description": "Alternative to ES6 Symbol",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kouty/like-a-symbol.git"
+  },
+  "keywords": [
+    "ES6",
+    "JavaScript",
+    "Symbol",
+    "ecmascript",
+    "es6"
+  ],
+  "author": "Andrea Koutifaris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kouty/like-a-symbol/issues"
+  },
+  "homepage": "https://github.com/Kouty/like-a-symbol#readme",
+  "dependencies": {
+    "es6-symbol": "^3.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  }
+}
