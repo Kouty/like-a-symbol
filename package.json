@@ -24,9 +24,7 @@
     "url": "https://github.com/Kouty/like-a-symbol/issues"
   },
   "homepage": "https://github.com/Kouty/like-a-symbol#readme",
-  "dependencies": {
-    "es6-symbol": "^3.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
     "jasmine-core": "^3.1.0",
