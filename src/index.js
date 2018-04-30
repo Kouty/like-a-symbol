@@ -14,7 +14,6 @@
       toJSON() {
         return this.toString();
       },
-
     };
   }
 
@@ -31,4 +30,4 @@
   };
 
   exports.LikeASymbol = LikeASymbol;
-})(module && module.exports || self);
+})(typeof module !== 'undefined' && module.exports || self);
