@@ -1,6 +1,6 @@
 # like-a-symbol
 An alternative to EcmaScript 6 Symbol that can be chained with strings and used with JSON.stringify(...);
-##Reason
+## Reason
 Symbol() function in JavaScript has some features that can be annoying:
 ```javascript
 const s = Symbol('S');
