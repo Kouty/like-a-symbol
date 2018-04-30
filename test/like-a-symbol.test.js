@@ -26,19 +26,36 @@ describe('LikeASymbol', () => {
 
   describe('JSON', () => {
     it('should serialize with JSON.stringify() to "LikeAString(description)"', () => {
-      console.log(JSON.stringify({ a: LikeASymbol() }));
       expect(JSON.stringify(LikeASymbol('description'))).to.equal('"LikeASymbol(description)"')
     });
+  });
 
+  describe('parsing', () => {
     it('should provide a convenient static function fromString', () => {
       const symbol = LikeASymbol('(a)');
       expect(LikeASymbol.fromString(symbol.toJSON()).toString()).to.equal(symbol.toString());
     });
 
-    xit('should consider "LikeASymbol(description)" parsable', () => {
+    it('should consider "LikeASymbol(description)" parsable', () => {
       expect(LikeASymbol.isParsable('LikeASymbol(description)')).to.equal(true);
     });
 
+    it('should consider "LikeASymbol(" NOT parsable', () => {
+      expect(LikeASymbol.isParsable('LikeASymbol(')).to.equal(false);
+    });
+
+    it('should throw an exception if the given value is not parsable', () => {
+      expect(LikeASymbol.fromString.bind(LikeASymbol, 'A string')).to.throw(SyntaxError);
+    });
+  });
+
+  it('should return itself as valueOf', () => {
+    const symbol = LikeASymbol();
+    expect(symbol.valueOf()).to.equal(symbol);
+  });
+
+  it('should have a length of 0', () => {
+    expect(LikeASymbol.length).to.equal(0);
   });
 
 });
