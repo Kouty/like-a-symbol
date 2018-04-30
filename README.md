@@ -14,6 +14,11 @@ console.log(JSON.stringify(vegetable));
 // Outputs: "{"label":"pear"}", type field is lost.
 ```
 
+## Installation
+```
+npm install --save like-a-symbol
+```
+
 ## Syntax
 ```javascript
 LikeASymbol([description])
