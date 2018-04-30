@@ -4,7 +4,7 @@
   "description": "Alternative to ES6 Symbol",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -w"
   },
   "repository": {
     "type": "git",
