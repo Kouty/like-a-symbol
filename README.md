@@ -14,7 +14,7 @@ console.log(JSON.stringify(vegetable));
 // Outputs: "{"label":"pear"}", type field is lost.
 ```
 
-##Syntax
+## Syntax
 ```javascript
 LikeASymbol([description])
 ```
@@ -23,7 +23,7 @@ description: String | optional
 
 Optional, string. A description of the symbol which can be used for debugging.
 
-##Description
+## Description
 You can use LikeASymbol to emulate part of the behavior of the ES6 Symbol() avoiding exceptions when
 the symbol is put inside a string for debug reasons.
 
@@ -54,7 +54,7 @@ LikeASymbol.isParsable(value)
 ```
 Returns true if value is a parsable string representation of the symbol. Returns false otherwise.
 
-##Keep in mind
+## Keep in mind
 Keep in mind that LikeASymbol is not a Symbol, so function like `Object.getOwnPropertySymbols()`
 will not return any property defined with LikeASymbol.
 Also `LikeASymbol('foo') == 'LikeASymbol(foo)'` will return true.
