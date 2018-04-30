@@ -17,16 +17,16 @@
     };
   }
 
-  LikeASymbol.fromString = function fromJSON(jsonValue) {
-    var match = jsonValue.match(parseRegex);
+  LikeASymbol.fromString = function string(value) {
+    var match = value.match(parseRegex);
     if (!match) {
-      throw new SyntaxError('Cannot parse "' + jsonValue + '"');
+      throw new SyntaxError('Cannot parse "' + value + '"');
     }
     return new LikeASymbol(match[1]);
   };
 
-  LikeASymbol.isParsable = function isParsable(jsonValue) {
-    return jsonValue.match(parseRegex) != null;
+  LikeASymbol.isParsable = function isParsable(value) {
+    return value.match(parseRegex) != null;
   };
 
   exports.LikeASymbol = LikeASymbol;

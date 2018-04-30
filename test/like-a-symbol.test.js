@@ -26,7 +26,7 @@ describe('LikeASymbol', () => {
 
   describe('JSON', () => {
     it('should serialize with JSON.stringify() to "LikeAString(description)"', () => {
-      expect(JSON.stringify(LikeASymbol('description'))).to.equal('"LikeASymbol(description)"')
+      expect(JSON.stringify(LikeASymbol('description'))).to.equal('"LikeASymbol(description)"');
     });
   });
 
