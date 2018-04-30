@@ -13,6 +13,7 @@ const vegetable = {label: 'pear', type: Symbol('pear')};
 console.log(JSON.stringify(vegetable));
 // Outputs: "{"label":"pear"}", type field is lost.
 ```
+
 ##Syntax
 ```javascript
 LikeASymbol([description])
@@ -39,6 +40,7 @@ LikeASymbol('Foo').toString() === 'LikeASymbol(Foo)'; // true
 
 JSON.stringify({ label: 'pear', type: LikeASymbol('pear') }); // {"label":"pear","type":"LikeASymbol(pear)"}
 ```
+
 ## Methods
 ```javascript
 LikeASymbol.fromString(value)
