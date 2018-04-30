@@ -27,8 +27,8 @@ Optional, string. A description of the symbol which can be used for debugging.
 You can use LikeASymbol to emulate part of the behavior of the ES6 Symbol() avoiding exceptions when
 the symbol is put inside a string for debug reasons.
 
-In addition Symbols are not serialized with JSON.stringify(...), whereas with LikeASymbol its
-string representation will be serialized and can be parsed back using LikeASymbol.fromString(value) function.
+In addition Symbols are not serialized with `JSON.stringify(...)`, whereas with LikeASymbol its
+string representation will be serialized and can be parsed back using `LikeASymbol.fromString(value)` function.
 
 ```javascript
 const s1 = LikeASymbol();
