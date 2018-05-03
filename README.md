@@ -28,7 +28,7 @@ npm install --save like-a-symbol
 ```
 or
 ```javascript
-import { LikeASymbol };
+import { LikeASymbol } from 'like-a-symbol';
 const pear = LikeASymbol('pear');
 ```
 
