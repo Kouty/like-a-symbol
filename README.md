@@ -19,6 +19,19 @@ console.log(JSON.stringify(vegetable));
 npm install --save like-a-symbol
 ```
 
+## Usage
+```html
+<script src="https://unpkg.com/like-a-symbol@1.0.0/src/index.js"></script>
+<script>
+  const pear = LikeASymbol('pear');
+</script>
+```
+or
+```javascript
+import { LikeASymbol };
+const pear = LikeASymbol('pear');
+```
+
 ## Syntax
 ```javascript
 LikeASymbol([description])
