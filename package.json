@@ -1,6 +1,6 @@
 {
   "name": "like-a-symbol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alternative to ES6 Symbol",
   "main": "src/index.js",
   "scripts": {
